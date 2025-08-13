@@ -1,6 +1,10 @@
+import { Inter } from 'next/font/google'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import Image from 'next/image'
+
+const inter = Inter({ subsets: ['latin'] })
+
 
 export default function Home() {
   return (
@@ -18,21 +22,16 @@ export default function Home() {
               key={i}
               className="absolute w-1 h-1 bg-white rounded-full animate-pulse"
               style={{
-                  left: `${Math.random() * 100}%`,
+                  left: `${Math.random() * 100  }%`,
                   top: `${Math.random() * 100}%`,
-                  animationDelay: `${Math.random() * 3}s`,
-                  animationDuration: `${2 + Math.random() * 2}s`
+                  animationDelay: `${Math.random() * 1}s`,
+                  animationDuration: `${1 + Math.random() * 1}s`
                 }}
               />
             ))}
           </div>
         </div>
-          
-          {/* Glowing arc effect */}
-          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full h-96">
-            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-t from-autoflow-purple/20 via-blue-500/10 to-transparent rounded-t-full blur-3xl"></div>
-            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[600px] h-[300px] bg-gradient-to-t from-blue-400/30 via-purple-500/20 to-transparent rounded-t-full blur-2xl"></div>
-          </div>
+ 
         </div>
       </div>
 
