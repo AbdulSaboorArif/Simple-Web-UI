@@ -8,12 +8,12 @@ const Hero = () => {
   return (
     <section className="relative z-10 min-h-screen flex flex-col items-center justify-center px-6 text-center">
       {/* Top Banner */}
-      <div className="mb-8 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 bg-[#1C166E] rounded-full">
+      <div className="mb-8 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6  bg-gradient-to-r from-[#1C166E] to-[#020208] hover:from-[#2A1F7A] hover:to-[#0A0A0A] rounded-full">
         <div className={`${inter.className} px-6 py-2 border border-white/20 rounded-full bg-autoflow-purple/5`}>
           <span className="text-white text-sm font-medium">
             AutoFlow is an open-source automation platform
           </span>
-        <button className="px-4 py-2 bg-autoflow-purple/30 hover:bg-autoflow-purple/40 border border-white/20 rounded-full text-white text-sm font-medium transition-all duration-300">
+        <button className="px-4 py-2 bg-[#6D63FB] border border-white/20 rounded-full text-white text-sm font-medium transition-all duration-300">
           Meet the Developer
         </button>
         </div>
@@ -21,12 +21,12 @@ const Hero = () => {
 
       {/* Main Heading */}
       <div className="mb-8 max-w-4xl">
-        <h1 className={`${inter.className}text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight`}>
+        <h1 className={`${inter.className}text-4xl sm:text-5xl lg:text-6xl font-semibold text-white mb-4 leading-tight`}>
           Automate your workflow
         </h1>
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl text-white leading-tight">
           with{' '}
-          <span className={`${lora.className} text-autoflow-purple`}>
+          <span className={`${lora.className} text-white`}>
             AutoFlow
           </span>
         </h2>
@@ -41,7 +41,7 @@ const Hero = () => {
 
       {/* CTA Buttons */}
       <div className="mb-16 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-        <button className="btn-primary text-lg px-8 py-4 bg-[#1C166E] rounded-full">
+        <button className="btn-primary text-lg px-8 py-4 bg-gradient-to-t from-[#1C166E] to-[#020208] hover:from-[#2A1F7A] hover:to-[#0A0A0A] rounded-full">
           Get started
         </button>
         <button className="btn-secondary text-lg px-8 py-4 bg-black rounded-full">
